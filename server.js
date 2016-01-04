@@ -5,10 +5,7 @@ var options={
 	
 }
 var server=restify.createServer(options);
-server.use(function(req,res,next){
-	console.log("middleware 1",req.body);
-	next();
-})
+
 server.use(restify.bodyParser({
 	maxBodySize:10*1024
 }));
