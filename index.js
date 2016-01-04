@@ -3,5 +3,3 @@
  server.listen(port,function(){
 	 console.log("todo server is listening on %j",server.address());
  });
-
- require("./routes")
